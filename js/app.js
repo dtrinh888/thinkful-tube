@@ -24,9 +24,9 @@ $(function(){
 			var vidTitle = video.snippet.title;
 			//vidID is needed to concatenate the id to the youtube url
 			var vidID = video.id.videoId;
-			var container = $('<div/>', {'class': 'video-container'});
-			var thumbContainer = $('<div/>', {'class': 'thumbnail'});
-			var thumbnailElement = $('<a/>', { 'src': thumbnail});
+			var container = $('<div/>', { 'class': 'video-container' });
+			var thumbContainer = $('<div/>', { 'class': 'thumbnail' });
+			var thumbnailElement = $('<img/>', { 'src': thumbnail });
 
 			//this is done to append all the thumbnails after each other
 			thumbContainer.append(thumbnailElement);

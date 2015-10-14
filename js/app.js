@@ -51,7 +51,7 @@ $(function(){
 	//jQuery event listeners
 	$('.search-btn').on('click', function(event){
 		event.preventDefault();
-		var searchInput = $('search-field').val();
+		var searchInput = $('.search-field').val();
 		search(searchInput, $('#search-results'));
 	});
 });

@@ -15,6 +15,7 @@ $(function(){
 
 	var display = function(videos, el){
 		//need to empty out search results in order to do a new search
+		//hides loading message
 		el.empty();
 		//
 		$.each(videos, function(index, video){
@@ -27,8 +28,11 @@ $(function(){
 			var vidDesc = video.snippet.description;
 			var container = $('<div/>', { 'class': 'video-container' });
 			var thumbContainer = $('<div/>', { 'class': 'thumbnail' });
-			var thumbnailElement = $('<img/>', { 'src': thumbnail });
-			var thumbnailLink = $('<a/>', {'src': thumbnail});
+			var thumbnailElement = $('<img/>', { 'src': thumbnail, 
+				'href': 'https://www.youtube.com/watch?v='+vidID
+				 
+			});
+			var thumbnailLink = $('<a/>', {'img': thumbnail});
 
 			//this is done to append all the thumbnails after each other
 			thumbContainer.append(thumbnailElement).append(thumbnailLink);
@@ -37,6 +41,8 @@ $(function(){
 			var titleElement = $('<a/>', {
 				//put the '' around the key property so that they don't read them as variables
 				'href': 'https://www.youtube.com/watch?v='+vidID,
+				//did this so that when we click on the link it will open up another browser
+				//do it mainly for plunker because you don't want to lose your place
 				'target': '_blank',
 				'html': vidTitle,				
 			});

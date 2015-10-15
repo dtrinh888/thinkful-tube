@@ -24,14 +24,16 @@ $(function(){
 			var vidTitle = video.snippet.title;
 			//vidID is needed to concatenate the id to the youtube url
 			var vidID = video.id.videoId;
+			var vidDesc = video.snippet.description;
 			var container = $('<div/>', { 'class': 'video-container' });
 			var thumbContainer = $('<div/>', { 'class': 'thumbnail' });
 			var thumbnailElement = $('<img/>', { 'src': thumbnail });
+			var thumbnailLink = $('<a/>', {'src': thumbnail});
 
 			//this is done to append all the thumbnails after each other
-			thumbContainer.append(thumbnailElement);
+			thumbContainer.append(thumbnailElement).append(thumbnailLink);
 
-			var titleContainer = $('<div/>', { 'class': 'title' });
+			var titleContainer = $('<div/>', { 'class': 'title' });	
 			var titleElement = $('<a/>', {
 				//put the '' around the key property so that they don't read them as variables
 				'href': 'https://www.youtube.com/watch?v='+vidID,
@@ -41,8 +43,13 @@ $(function(){
 
 			titleContainer.append(titleElement);
 
+			var descContainer = $('<div/>', {'class': 'description'});
+			var descElement = $('<p/>', {'html': vidDesc});
+
+			descContainer.append(descElement);
+	
 			//this displays the thumbnail and title 
-			container.append(thumbContainer).append(titleContainer);
+			container.append(thumbContainer).append(titleContainer).append(descContainer);
 
 			el.append(container);
 		});

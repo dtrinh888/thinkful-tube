@@ -1,3 +1,51 @@
 .container {
-	text-align: center;
+	margin: 0 auto;	
+	font-family: arial;
+	color: #4628FB;
+}
+
+.master-nav {
+	background-color: white;
+	height: 4.375rem;
+	/*position: fixed;*/
+	width: 100%;
+	border-bottom: 1px solid #4628FB;
+	z-index: 9999;
+}
+
+.search-nav {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.search-query{
+	float: right;
+	padding: 25px 0px;	
+}
+
+.brand{
+	float: left;
+	padding-left: 0px;	
+}
+
+#search-results a {
+	font-size: 18px;
+	text-decoration: none;
+}
+
+#search-container {	
+	width: 1000px;
+	margin: 10px auto;
+}
+
+.search-nav img {
+	width: 5%;
+	float:left;
+	padding-top: 10px;
+}
+
+.description {
+	font-size: 10px;
+	margin-top: -10px;
+	color: black;
 }

@@ -26,7 +26,7 @@ $(function(){
 			//vidID is needed to concatenate the id to the youtube url
 			var vidID = video.id.videoId;
 			var vidDesc = video.snippet.description;
-			var container = $('<div/>', { 'class': 'video-container' });
+			/*var container = $('<div/>', { 'class': 'video-container' });
 			var thumbContainer = $('<div/>', { 'class': 'thumbnail' });
 			var thumbnailElement = $('<img/>', { 'src': thumbnail, 
 				'href': 'https://www.youtube.com/watch?v='+vidID
@@ -55,9 +55,26 @@ $(function(){
 			descContainer.append(descElement);
 	
 			//this displays the thumbnail and title 
-			container.append(thumbContainer).append(titleContainer).append(descContainer);
+			container.append(thumbContainer).append(titleContainer).append(descContainer);*/
 
-			el.append(container);
+			var vidContent = 
+				'<span class="video-container">'+
+					'<div class="thumbnail">'+
+						'<a href="https://www.youtube.com/watch?v='+vidID+'" target="_blank">'+
+							'<img src="'+thumbnail+'">'+
+						'</a>'+
+					'</div>'+
+					'<span class="title">'+
+						'<a href="https://www.youtube.com/watch?v='+vidID+'"target="_blank">'+
+							vidTitle+
+						'</a>'+		
+					'</span>'+
+					'<div class="description">'+
+						vidDesc+
+					'</div>'+
+				'</span>';	
+
+			el.append(vidContent);
 		});
 	};
 

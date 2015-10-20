@@ -71,11 +71,11 @@ $(function(){
 								vidTitle+
 							'</a>'+
 						'</div>'+
-						'<div class="clear"></div>' +								
 						'<div class="description">'+
 							vidDesc+
 						'</div>'+
 					'</div>'+
+					'<div class="clear"></div>' +
 				'</span>';	
 
 			el.append(vidContent);

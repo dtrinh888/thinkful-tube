@@ -60,12 +60,12 @@ $(function(){
 
 			var vidContent = 
 				'<span class="video-container">'+
-					'<span class="thumbnail">'+
+					'<div class="thumbnail">'+
 						'<a href="https://www.youtube.com/watch?v='+vidID+'" target="_blank">'+
 							'<img src="'+thumbnail+'">'+
 						'</a>'+
-					'</span>'+
-					'<span class="title">'+
+					'</div>'+
+					'<div class="title">'+
 						'<div>'+
 							'<a href="https://www.youtube.com/watch?v='+vidID+'"target="_blank">'+
 								vidTitle+
@@ -74,7 +74,7 @@ $(function(){
 						'<div class="description">'+
 							vidDesc+
 						'</div>'+
-					'</span>'+
+					'</div>'+
 				'</span>';	
 
 			el.append(vidContent);

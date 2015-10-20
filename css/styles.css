@@ -52,3 +52,6 @@
 	color: black;
 	padding-bottom: 15px;
 }
+.thumbnail {
+	float: left;
+}

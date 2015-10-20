@@ -65,13 +65,13 @@ $(function(){
 							'<img src="'+thumbnail+'">'+
 						'</a>'+
 					'</div>'+
-					'<div class="title">'+
-						'<div class="clear"></div>' +
+					'<div class="title">'+						
 						'<div>'+
 							'<a href="https://www.youtube.com/watch?v='+vidID+'"target="_blank">'+
 								vidTitle+
 							'</a>'+
-						'</div>'+								
+						'</div>'+
+						'<div class="clear"></div>' +								
 						'<div class="description">'+
 							vidDesc+
 						'</div>'+

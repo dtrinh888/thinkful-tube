@@ -66,6 +66,7 @@ $(function(){
 						'</a>'+
 					'</div>'+
 					'<div class="title">'+
+						'<div class="clear"></div>' +
 						'<div>'+
 							'<a href="https://www.youtube.com/watch?v='+vidID+'"target="_blank">'+
 								vidTitle+

@@ -56,3 +56,6 @@
 .thumbnail {
 	float: left;
 }
+.clear {
+	clear: both;
+}
